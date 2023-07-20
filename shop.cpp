@@ -35,9 +35,14 @@ int main()
 {
     Shop mart;
     mart.initcounter();
-    mart.setPrice();
-    mart.setPrice();
-    mart.setPrice();
+    cout << "Enter the no. of items : " ;
+    int num;
+    cin >> num;
+    for (int i = 0; i < num; i++)
+    {
+        mart.setPrice();
+    }
+    
     mart.displayPrice();
     return 0;
 }
