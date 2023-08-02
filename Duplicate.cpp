@@ -2,11 +2,11 @@
 
 using namespace std;
 
-void Duplicate(int arr[], int n)
+void Duplicate(int arr[], int size)
 {
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < size; i++)
     {
-        for (int j = i + 1; j < n; j++)
+        for (int j = i + 1; j < size; j++)
         {
             if (arr[i] == arr[j])
             {
@@ -20,9 +20,9 @@ void Duplicate(int arr[], int n)
 int main()
 {
     int arr[] = {2, 7, 6, 5, 7, 9, 2, 11, 5};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int size = sizeof(arr) / sizeof(arr[0]);
     cout<<"Duplicate entries are: "<<endl;
-    Duplicate(arr, n);
+    Duplicate(arr, size);
 
     return 0;
 }
